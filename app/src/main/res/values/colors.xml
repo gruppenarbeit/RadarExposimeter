@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="choose_mode_button_color">#cccccc</color>
+    <color name="add_button">#FF409f</color>
+    <color name="fixedBar">#8A0808</color>
+    <color name="next_button">#2af030</color>
+    <color name="clear_button">#072a23</color>
+    <color name="normalBar">#cccccc</color>
+    <color name="activeBar">#3cf4d0</color>
+
+</resources>

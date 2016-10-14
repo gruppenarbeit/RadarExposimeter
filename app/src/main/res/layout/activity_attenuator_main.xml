@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_attenuator_main"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.matthustahli.radarexposimeter.AttenuatorMainActivity">
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <Button
+        android:id="@+id/b_mode_normal"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Normal"
+        android:textSize="@dimen/choose_mode_button_textsize"
+        android:background="@color/choose_mode_button_color"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="@dimen/set_weight_between_mode_buttons" >
+    </Space>
+
+    <Button
+        android:id="@+id/b_mode_21db"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="21dB"
+        android:textSize="@dimen/choose_mode_button_textsize"
+        android:background="@color/choose_mode_button_color"
+        android:layout_gravity="center_horizontal"
+
+        />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="@dimen/set_weight_between_mode_buttons" >
+    </Space>
+
+    <Button
+        android:id="@+id/b_mode_42db"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="42dB"
+        android:textSize="@dimen/choose_mode_button_textsize"
+        android:background="@color/choose_mode_button_color"
+        android:layout_gravity="center_horizontal"
+
+        />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="@dimen/set_weight_between_mode_buttons" >
+    </Space>
+    <Button
+        android:id="@+id/b_mode_accumulator"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Accumulate"
+        android:textSize="@dimen/choose_mode_button_textsize"
+        android:background="@color/choose_mode_button_color"
+        android:layout_gravity="center_horizontal"
+
+        />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+
+
+</LinearLayout>
