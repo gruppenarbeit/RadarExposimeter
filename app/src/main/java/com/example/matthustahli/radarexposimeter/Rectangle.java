@@ -22,22 +22,27 @@ public class Rectangle extends AppCompatActivity {
     private ArrayList<Float> bottom;
     private float hans;
     private int sizex;
+    public int[] height;
+    String active;
 
     //initialize
-    public Rectangle(float balkenBreite, float height, int balkenAnzahl, float abstandZwischenBalken, int sisey, int sisex) {
+    public Rectangle(float balkenBreite, int balkenAnzahl, float abstandZwischenBalken, int sisey, int sisex) {
         super();
         hans = (float) sisey;
         sizex = sisex;
         breiteBalken = balkenBreite;
-        frequency = height;
+        //frequency = height;
         anzahlBalken = balkenAnzahl;
         abgedekteLange = balkenBreite + abstandZwischenBalken;
+        OverviewScanPlotActivity helpMe = new OverviewScanPlotActivity();
+        height= helpMe.peak;
         left = lengthFromLeft();
         right = lengthFromRight();
         top = lengthFromTop();
         bottom = lengthFromBottom();
         Log.i("size_x: ", String.valueOf(sisex));
         Log.i("size_y: ", String.valueOf(sisey));
+       // active = mode;
 
 
     }
@@ -70,7 +75,7 @@ public class Rectangle extends AppCompatActivity {
     public ArrayList<Float> lengthFromTop() {
         ArrayList<Float> toReturn = new ArrayList<Float>();
         for (int i = 0; i <= anzahlBalken; i++) {
-            toReturn.add(i, (float) 200 + (i * 5));
+            toReturn.add(i, (float)200+ height[i]);
         }
         Log.i("top hight: ", String.valueOf(toReturn.get(0)));
 

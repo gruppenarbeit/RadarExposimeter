@@ -91,4 +91,29 @@
         android:layout_marginTop="10dp"
         />
 
+    <Button
+        android:id="@+id/switch_to_peak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peak"
+        android:textSize="20dp"
+        android:background="@color/activeBar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <Button
+        android:id="@+id/switch_to_rms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RMS"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/switch_to_peak"
+        android:background="@color/background_listview"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+
 </RelativeLayout>
